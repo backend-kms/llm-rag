@@ -5,6 +5,5 @@ Childcare Domain-Specific Chatbot Based on LLM and RAG
 python3 -m venv .venv
 
 # pip
-pip install -r requirements.txt
-pip freeze > requirements.txt
-
+pip install -r requirements.txt (install) \
+pip freeze > requirements.txt (save)
