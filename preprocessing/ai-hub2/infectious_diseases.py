@@ -61,7 +61,8 @@ with open(output_jsonl_file, "w", encoding="utf-8") as output_file_handle:
             if prompt_text and completion_text:
                 jsonl_entry = {
                     "prompt": prompt_text + "\n\n###\n\n",
-                    "completion": " " + completion_text + " END"
+                    "completion": " " + completion_text + " END",
+                    "source": "AIHub 감염성질환 Q&A 라벨링 데이터셋"
                 }
                 output_file_handle.write(json.dumps(jsonl_entry, ensure_ascii=False) + "\n")
 
