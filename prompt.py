@@ -1,7 +1,7 @@
 import config
 from openai import OpenAI
 
-class GPTClient:
+class BabyAIAssistant:
     def __init__(self):
         self.api_key = config.OPENAI_API_KEY
         self.client = OpenAI(api_key=self.api_key)
@@ -17,5 +17,5 @@ class GPTClient:
         print(response)
         return f"Response to '{prompt}'"
 
-client = GPTClient()
+client = BabyAIAssistant()
 client.generate_response(prompt="2024년 미스터트롯 우승자는?")
